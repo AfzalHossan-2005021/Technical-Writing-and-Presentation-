@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{CSE 300 Online 1}
+\author{2005021}
+\date{\today}
+
+\usepackage{xcolor}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+This is the first online practice on \LaTeX.
+We will do some styling in section 2.
+
+\section{Styling}
+This is \textcolor{red}{\textbf{bold}}. This is \textit{\textcolor{cyan}{italic}} \& so on.
+
+\section*{Use of special characters}
+You can use special characters by preceding with $\backslash$. Another package can be
+used named as verbatim. Example: \~\,!\$\#$\backslash$@*\,\^\\
+
+\section{List}
+There are 3 kinds of list.
+
+\begin{enumerate}[i]
+    \item Un-ordered
+    \item Ordered
+    \item Description 
+\end{enumerate}
+Let’s see an example of lists:
+\begin{description}
+    \item [CSE 311] Data Communication I
+    \begin{itemize}
+        \item Fourier\\
+        ADC
+    \end{itemize}
+    \item [CSE 305]  Computer Architecture
+    \begin{enumerate}
+        \item MIPS
+        \begin{enumerate}
+            \item commands
+            \item pipeline
+        \end{enumerate}
+        \item Shared memory
+    \end{enumerate}
+    \item [CSE 309]  Compiler
+\end{description}
+
+\section{Table}
+For understanding the use of multi-row and multi-column command see the
+table 1
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|c|r|}
+        \hline
+        \multirow{2}{*}{Dollar}  & Rupee & Taka & Euro \\
+        \cline{2-4}
+        & \multicolumn{2}{c|}{} & DU \\
+        \cline{4-4}
+        City & \multicolumn{2}{c}{Dhaka} & BUET \\
+        \cline{1-1}
+        \cline{4-4}
+        Food & \multicolumn{2}{c|}{} & Mosque\\
+        \hline
+    \end{tabular}
+    \caption{A table for online test}
+    \label{tab:my_label}
+\end{table}
+
+\end{document}
